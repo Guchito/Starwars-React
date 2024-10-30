@@ -1,11 +1,26 @@
-nav{
+.DesktopNavigation{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 10px;
     border-bottom: 1px black solid;
     
 }
+
+@media (min-width: 769px){
+    .NavLinks{
+        width: 50%;
+    }
+    
+    .NavLinks ul{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        width: 100%;
+    }
+
+}
+
 
 
 .MobileNavigation{
@@ -37,18 +52,22 @@ nav{
         flex-direction: column;
         justify-content: space-evenly;
         position: absolute;
-        
-        top: 15vh;
+        top: 10vh;
         right: 0;
         height: 50vh;
         width: 100%;
         background: rgb(29,0,64);
         background: linear-gradient(0deg, rgba(29,0,64,1) 0%, rgba(85,85,85,1) 100%);
     }
+    
+    .logo{
+        padding: 0;
+    }
 
     .MobileNavigation{
         display: flex;
         align-items: center;
+        justify-content: center;
         height: 15vh;
         background-color: #555555;
     }
