@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Navbar from './components/Navbar'
+import NavBar from './components/NavBar/Navbar';
 import Characters from './components/Characters'
 import CharacterDetail from './components/CharacterDetail'
 import Planets from './components/Planets'
@@ -14,12 +14,11 @@ import Home from './components/Home'
 
 
 
-
 function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <NavBar />
         <Switch>
           <Route path="/characters/detail/:id">
             <CharacterDetail />
