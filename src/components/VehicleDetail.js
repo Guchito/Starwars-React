@@ -10,7 +10,7 @@ function VehicleDetail(){
         fetch(`https://swapi.dev/api/vehicles/`)
             .then(response => response.json())
             .then(data => setDetail(data.results[id-1]))
-    },[])
+    },[id])
 
 
 
