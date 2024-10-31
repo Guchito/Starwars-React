@@ -4,7 +4,9 @@
   max-width: 1000px;
   font-size: 1.4rem ;
 }
-
+.homeImg{
+  max-height: 85vh;
+}
 @media (max-width: 768px){
   .homeImg{
     height: auto;

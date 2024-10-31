@@ -14,7 +14,7 @@ function VehicleDetail(){
 
 
 
-    return (<>
+    return (<div className='container'>
         <div className='detail'>
             <h1>{detail.name}</h1>
             <p>Model: {detail.model}</p>
@@ -32,7 +32,7 @@ function VehicleDetail(){
         </div>
 
     
-    </>)
+    </div>)
 }
 
 export default VehicleDetail;

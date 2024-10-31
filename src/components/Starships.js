@@ -11,7 +11,7 @@ function Starships() {
         .then(data => setStarships(data.results))
     },[])
 
-    return (<>
+    return (<div className='container'>
         <ul className="list">
             {starships.map((starship, i)=> <Link to={`/starships/detail/${i+1}`}> <li key={`${starship} ${i}`}> {starship.name} </li> </Link>)}
         </ul>
@@ -20,7 +20,7 @@ function Starships() {
                 <Link to="/">Back</Link>
             </button>
         </div>
-    </>
+    </div>
 
     )
 }
