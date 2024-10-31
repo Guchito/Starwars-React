@@ -1,9 +1,13 @@
+.detail{
+  height: 75dvh;
+
 .container{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 80vh;
   overflow: auto;
+
 
 }
 
