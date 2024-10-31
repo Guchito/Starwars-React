@@ -16,7 +16,7 @@ function Vehicles() {
             <ul className="list">
                 {vehicles.map((vehicle, i)=> <Link to={`/vehicles/detail/${i+1}`}><li key={`${vehicle} ${i}`}> {vehicle.name} </li></Link>)}
             </ul>
-            <div className='buttonListContainer'>
+            <div className='buttonContainer noShow'>
                 <button className='button'>
                     <Link to="/">Back</Link>
                 </button>
