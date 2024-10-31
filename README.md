@@ -15,6 +15,10 @@ A Star Wars-themed web application built with JavaScript and React, designed to 
 - **React**: Front-end JavaScript library for building interactive UI.
 - **API Consumption**: Data is fetched from the Star Wars API (SWAPI).
 
+## Live Demo
+
+Check out the live demo of the application at: [Star Wars](https://warstar.netlify.app/)
+
 ## Setup and Installation
 
 1. Clone the repository:
@@ -38,6 +42,10 @@ Open your browser and go to http://localhost:3000 to view the app.
 
 ## API
 This app uses the [Star Wars API (SWAPI)](https://swapi.dev/) to retrieve data about characters, planets, starships, and other Star Wars entities.
+
+## Contact
+
+Agustin Gaggero Garcia - [Mail Me!](mailto:a_gaggero@hotmail.com)
 
 
 ## Acknowledgments
