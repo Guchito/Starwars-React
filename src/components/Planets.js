@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
-
+import './button.css'
 import './list.css'
 
 function Planets() {
@@ -11,9 +11,18 @@ function Planets() {
         .then(data => setPlanets(data.results))
     },[])
 
-    return (<ul>
-        {planets.map((planet, i)=> <Link to={`/planets/detail/${i+1}`}> <li key={i}> {planet.name} </li></Link>)}
+    return (
+    <>
+        <ul className="list">
+            {planets.map((planet, i)=> <Link to={`/planets/detail/${i+1}`}> <li key={i}> {planet.name} </li></Link>)}
         </ul>
+        <div className='buttonListContainer'>
+            <button className='button'>
+                <Link to="/">Back</Link>
+            </button>
+        </div>
+    
+    </>
     )
 }
 export default Planets;
