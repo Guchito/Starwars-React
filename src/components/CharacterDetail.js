@@ -15,7 +15,7 @@ function CharacterDetail() {
     
 
 
-    return (<> 
+    return (<div className='container'> 
         <div className='detail'>
             <h1>{detail.name}</h1>
             <p>Heigth: {detail.height/100}</p>
@@ -31,7 +31,7 @@ function CharacterDetail() {
             </button>
         </div>
     
-    </>)
+    </div>)
 }
 
 export default CharacterDetail;

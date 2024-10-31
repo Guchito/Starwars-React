@@ -15,7 +15,7 @@ function PlanetDetail(){
     
 
 
-    return (<>
+    return (<div className='container'>
         <div className='detail'>
             <h1>{detail.name}</h1>
             <p>Rotation period: {detail.rotation_period} hs</p>
@@ -29,7 +29,7 @@ function PlanetDetail(){
             </button>
         </div>
     
-    </>)
+    </div>)
 }
 
 export default PlanetDetail;
