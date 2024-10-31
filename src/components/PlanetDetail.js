@@ -10,7 +10,7 @@ function PlanetDetail(){
         fetch(`https://swapi.dev/api/planets/${id}/`)
             .then(response => response.json())
             .then(data => setDetail(data))
-    },[])
+    },[id])
 
     
 

@@ -10,7 +10,7 @@ function CharacterDetail() {
         fetch(`https://swapi.dev/api/people/${id}/`)
             .then(response => response.json())
             .then(data => setDetail(data))
-    },[])
+    },[id])
 
     
 

@@ -28,7 +28,7 @@ const MobileNavigation = () =>{
         <nav className='MobileNavigation'>
             <ul className='logo'>
                 <li onClick={() => isClicked && closeMenu()}>
-                    <Link to='/' className="navbar"> <img src="https://logodownload.org/wp-content/uploads/2015/12/star-wars-logo-3-1.png"></img> </Link>
+                    <Link to='/' className="navbar"> <img src="https://logodownload.org/wp-content/uploads/2015/12/star-wars-logo-3-1.png" alt="Star Wars logo"></img> </Link>
                 </li>
             </ul>
             { click ? Close : Hamburger} 
