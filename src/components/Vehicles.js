@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
-
+import './button.css'
 import './list.css'
 
 function Vehicles() {
@@ -11,9 +11,17 @@ function Vehicles() {
         .then(data => setVehicles(data.results))
     },[])
 
-    return (<ul>
-        {vehicles.map((vehicle, i)=> <Link to={`/vehicles/detail/${i+1}`}><li key={`${vehicle} ${i}`}> {vehicle.name} </li></Link>)}
-        </ul>
+    return (
+        <>
+            <ul className="list">
+                {vehicles.map((vehicle, i)=> <Link to={`/vehicles/detail/${i+1}`}><li key={`${vehicle} ${i}`}> {vehicle.name} </li></Link>)}
+            </ul>
+            <div className='buttonListContainer'>
+                <button className='button'>
+                    <Link to="/">Back</Link>
+                </button>
+            </div>
+        </>
     )
 }
 export default Vehicles;
