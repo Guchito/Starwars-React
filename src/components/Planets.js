@@ -12,7 +12,7 @@ function Planets() {
     },[])
 
     return (
-    <>
+    <div className='container'>
         <ul className="list">
             {planets.map((planet, i)=> <Link to={`/planets/detail/${i+1}`}> <li key={i}> {planet.name} </li></Link>)}
         </ul>
@@ -22,7 +22,7 @@ function Planets() {
             </button>
         </div>
     
-    </>
+    </div>
     )
 }
 export default Planets;

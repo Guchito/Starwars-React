@@ -3,7 +3,9 @@
   margin: 0 auto;
   max-width: 1000px;
 }
-
+.homeImg{
+  max-height: 85vh;
+}
 @media (max-width: 768px){
   .homeImg{
     height: auto;

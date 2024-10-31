@@ -12,7 +12,7 @@ function Vehicles() {
     },[])
 
     return (
-        <>
+        <div className='container'>
             <ul className="list">
                 {vehicles.map((vehicle, i)=> <Link to={`/vehicles/detail/${i+1}`}><li key={`${vehicle} ${i}`}> {vehicle.name} </li></Link>)}
             </ul>
@@ -21,7 +21,7 @@ function Vehicles() {
                     <Link to="/">Back</Link>
                 </button>
             </div>
-        </>
+        </div>
     )
 }
 export default Vehicles;
