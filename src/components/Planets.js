@@ -16,7 +16,7 @@ function Planets() {
         <ul className="list">
             {planets.map((planet, i)=> <Link to={`/planets/detail/${i+1}`}> <li key={i}> {planet.name} </li></Link>)}
         </ul>
-        <div className='buttonListContainer'>
+        <div className='buttonContainer noShow'>
             <button className='button'>
                 <Link to="/">Back</Link>
             </button>

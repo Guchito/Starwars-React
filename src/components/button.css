@@ -1,15 +1,11 @@
 .detail{
-  height: 75dvh;
+  height: 80dvh;
 }
-
 .container{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   height: 80vh;
   overflow: auto;
-
-
 }
 
 .buttonContainer{
@@ -18,14 +14,15 @@
   justify-content: flex-end;
 }
 
-.buttonListContainer{
-  display:flex;
-  width: 100%;
-  justify-content: flex-end;
+@media (max-width: 768px){
+  .buttonContainer{
+    position: absolute;
+    bottom: 5dvw;
+  }
 }
 
 @media (min-width: 769px){
-  .buttonListContainer{
+  .noShow{
       display: none;
   }
 }
@@ -67,7 +64,7 @@
 }
 
 .button:hover {
-  background: #F6F9FE;
+  background-color: #F6F9FE;
   color: #174ea6;
 }
 

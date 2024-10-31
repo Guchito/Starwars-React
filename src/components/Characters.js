@@ -15,7 +15,7 @@ function Characters() {
         <ul className="list">
             {characters.map((character, i)=> <Link to={`/characters/detail/${i+1}`}> <li key={ `${character} ${i}` }> {character.name} </li></Link>)}
         </ul>
-        <div className='buttonListContainer'>
+        <div className='buttonContainer noShow'>
             <button className='button'>
                 <Link to="/">Back</Link>
             </button>
