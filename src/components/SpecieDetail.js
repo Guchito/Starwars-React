@@ -73,7 +73,7 @@ function SpecieDetail() {
               </li>
             ))
           ) : (
-            <p>No people found for this species.</p>
+            <p>Loading...</p>
           )}
         </ul>
       </div>
