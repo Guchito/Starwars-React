@@ -8,8 +8,8 @@ import Planets from './components/Planets'
 import PlanetDetail from './components/PlanetDetail'
 import Vehicles from './components/Vehicles'
 import VehicleDetail from './components/VehicleDetail'
-import Starships from './components/Starships'
-import StarshipDetail from './components/StarshipDetail'
+import Species from './components/Species'
+import SpecieDetail from './components/SpecieDetail';
 import Home from './components/Home'
 
 
@@ -38,11 +38,11 @@ function App() {
           <Route path="/vehicles">
             <Vehicles />
           </Route>
-          <Route path="/starships/detail/:id">
-            <StarshipDetail />
+          <Route path="/species/detail/:id">
+            <SpecieDetail />
           </Route>
-          <Route path="/starships">
-            <Starships />
+          <Route path="/species">
+            <Species />
           </Route>
           <Route exact path="/">
             <Home />

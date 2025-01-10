@@ -17,7 +17,7 @@ const NavLinks = ({isClicked, closeMenu}) =>{
                 <Link to='/vehicles' className="navbar"> Vehicles </Link>
             </li>
             <li onClick={() => isClicked && closeMenu()}>
-                <Link to='/starships'className="navbar"> Starships  </Link>
+                <Link to='/species'className="navbar"> Species  </Link>
             </li>
         </ul>
     </nav>
