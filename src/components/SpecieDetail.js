@@ -37,7 +37,6 @@ function SpecieDetail() {
               return null; // If the fetch fails, return null
             })
           );
-          console.log(peopleData);
           // Filter out any null values (in case some people data is missing or couldn't be fetched)
           setPeople(peopleData.filter((person) => person !== null));
         } else {
