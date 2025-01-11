@@ -26,16 +26,18 @@ function SpecieDetail() {
           // Now fetch people data based on the pks in the species' people array
           const peopleData = await Promise.all(
             localSpecie.fields.people.map(async (personPk) => {
+              
               const localPeopleResponse = await fetch('/data/people.json');
               if (localPeopleResponse.ok) {
                 const peopleData = await localPeopleResponse.json();
                 const person = peopleData.find((p) => p.pk === personPk);
-                return person ? person.fields.name : null;
+                
+                return person ? {name: person.fields.name, pk: personPk} : null;
               }
               return null; // If the fetch fails, return null
             })
           );
-          
+          console.log(peopleData);
           // Filter out any null values (in case some people data is missing or couldn't be fetched)
           setPeople(peopleData.filter((person) => person !== null));
         } else {
@@ -46,7 +48,7 @@ function SpecieDetail() {
         setDetail(null); // Set to null if fetching species data fails
       }
     };
-
+    
     fetchSpecieDetail();
   }, [id]);
 
@@ -64,12 +66,12 @@ function SpecieDetail() {
         <p>Skin colors: {detail.skin_colors}</p>
         <p>Language: {detail.language}</p>
 
-        <h3>People:</h3>
+        <h3>Specimens:</h3>
         <ul>
           {people.length > 0 ? (
-            people.map((personName, index) => (
-              <li key={index}>
-                <Link to={`/characters/detail/${id}`}>{personName}</Link>
+            people.map((person) => (
+              <li key={person.pk}>
+                <Link to={`/characters/detail/${person.pk}`}>{person.name}</Link>
               </li>
             ))
           ) : (
